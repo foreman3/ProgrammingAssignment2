@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The following provide a method to cache an inverse of a matrix
 
-## Write a short comment describing this function
+## This method creates a wrapper Vector that wraps a matrix, and holds its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This method creates an inverse matrix.  It reads the inverse from the cache if it exists
+## and it stores the response to cache on first calculation.
 
 cacheSolve <- function(x, ...) {
   inv <- x$getInv()
